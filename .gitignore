@@ -1,0 +1,8 @@
+openrouter-chatbot.py
+chroma_db/
+.env
+chat_history/
+
+*.pyc
+.DS_Store
+data\__pycache__
