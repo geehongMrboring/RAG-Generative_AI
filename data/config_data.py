@@ -1,6 +1,11 @@
-md5_path = "./md5.txt"
+from pathlib import Path
+
+# 获取当前脚本文件所在的绝对路径
+BASE_DIR = Path(__file__).resolve().parent.parent
+
+md5_path = BASE_DIR / "md5.txt"
 collection_name = "rag"
-persist_directory = "./chroma_db"
+persist_directory = BASE_DIR / "chroma_db"
 
 # splitter
 chunk_size = 1000

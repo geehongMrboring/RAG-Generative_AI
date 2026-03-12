@@ -80,7 +80,7 @@ C:.
 │   .gitignore
 │   md5.txt
 │   README.md
-|   
+|  
 ├───chat_history
 │       user_001                    # Stores user chat logs                       
 │       

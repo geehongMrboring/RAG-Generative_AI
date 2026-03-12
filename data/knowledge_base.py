@@ -17,6 +17,7 @@ def check_md5(md5_str: str):
     else:
         # Read each line of fingerprints and compare with the current one
         for line in open(config.md5_path, 'r', encoding='utf-8').readlines():
+            line = line.strip()
             if line.strip() == md5_str:
                 return True  # Found it, indicating duplication
         return False
@@ -80,7 +81,6 @@ class KnowledgeBaseService(object):
         self.chroma.add_texts(
             texts=knowledge_chunks,
             metadatas=[metadata for _ in knowledge_chunks],
-            ids=[filename] * len(knowledge_chunks)
         )
 
         # 5. Save MD5 record to prevent future duplicates

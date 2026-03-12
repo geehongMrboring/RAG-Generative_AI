@@ -2,7 +2,7 @@ openrouter-chatbot.py
 chroma_db/
 .env
 chat_history/
-
+md5.txt
 *.pyc
 .DS_Store
 data\__pycache__
