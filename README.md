@@ -80,7 +80,7 @@ C:.
 │   .gitignore
 │   md5.txt
 │   README.md
-|  
+|
 ├───chat_history
 │       user_001                    # Stores user chat logs                       
 │       
@@ -108,4 +108,7 @@ Currently, the system exclusively supports .txt files. We are actively working o
 [ ] UI Enhancements: Improving the chatbot interface for better UX.
 
 [ ] Hybrid Search: Combining keyword search with vector search.
+
+## AT THE END
+If you like this project, please star this repo. I would appreacite it!
 

@@ -45,7 +45,7 @@ class KnowledgeBaseService(object):
         self.chroma = Chroma(
             collection_name=config.collection_name,
             # Use the nomic model from Ollama you just installed
-            embedding_function=OllamaEmbeddings(model="nomic-embed-text"),
+            embedding_function=OllamaEmbeddings(model=config.embedding_model_name),
             persist_directory=config.persist_directory
         )
 
